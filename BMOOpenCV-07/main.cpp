@@ -28,7 +28,7 @@ int main(int argc, const char * argv[]) {
         //Caso t=preferisse usar um while(true), basta descomentar a linha abaixo:
         //vid >> quadro;
         imshow("webcam", quadro);
-        if (waitKey(1000/fps) >= 0) { //será a pelo menos 'n' fps
+        if (waitKey(1000/fps) >= 0) { //Será a pelo menos 'n' fps
             break;
         }
     }
