@@ -6,8 +6,8 @@
 //  Copyright © 2020 ProgramasBMO. All rights reserved.
 //
 
-#include <iostream>
 #include <opencv2/opencv.hpp>
+#include "stdint.h"
 
 using namespace cv;
 using namespace std;
@@ -19,7 +19,8 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     Mat quadro;
     
-    VideoCapture vid(0);
+    //VideoCapture vid(0);
+    VideoCapture vid("rtp://127.0.0.1:1234");
     if (!vid.isOpened()) {
         return -1;
     }
